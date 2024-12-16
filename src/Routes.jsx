@@ -88,7 +88,7 @@ const SignIn = () => {
   // Add state for form fields
   const [formData, setFormData] = useState({
     email: "marcos.rodriguez.munoz@dema.ai",
-    password: "MarcosTest1234.",
+    password: "",
   });
 
   if (!isSignInLoaded) return null;
@@ -131,7 +131,7 @@ const SignIn = () => {
       />
       <input
         name="password"
-        type="text"
+        type="password"
         value={formData.password}
         onChange={handleInputChange}
         required
